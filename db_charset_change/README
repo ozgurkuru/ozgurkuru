@@ -1,0 +1,16 @@
+USE THESE FILES WITH ALL YOUR OWN RISK.
+
+About:
+
+This script changes databases, tables, and columns charset.
+You must set config.php for your server...
+
+
+Requirements:
+php-cli
+mysql
+
+Usage:
+
+$ php change.php
+
