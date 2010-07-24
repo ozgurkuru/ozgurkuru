@@ -16,24 +16,24 @@ $ php change.php
 
 Cli script usage:
  
-$ php cli.php arg1 arg2 arg3 arg4 arg5 arg6
-	 
-        arg1: mysql host
-
-        arg2: database name
-
-        arg3: database user name
-
-        arg4: database name
-
-        arg5: character set
-
-        arg6: character collate
-
-
-
-
-
-        Others:
-
-        --help, help, -h show this text
+usage:\n
+	php cli.php [options]\n
+	
+	Required Options: \n
+	
+	host=MYSQL_HOST
+	user=MYSQL_USER
+	pass=MYSQL_USER_PASS
+	db=MYSQL_DATABASE_NAME
+	set=CHARACTER_SET
+	collate=CHARACTER_COLLATE
+	Right Syntax:
+	php cli.php hostname=localhost ....
+	
+	Wrong Syntax:
+	php cli.php hostname = localhost ....
+	
+	Please dont use space after options and before values.
+	
+	Others:\n
+	--help, help, -h show this text
