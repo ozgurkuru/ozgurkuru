@@ -14,3 +14,26 @@ Usage:
 
 $ php change.php
 
+Cli script usage:
+ 
+$ php cli.php arg1 arg2 arg3 arg4 arg5 arg6
+	 
+        arg1: mysql host
+
+        arg2: database name
+
+        arg3: database user name
+
+        arg4: database name
+
+        arg5: character set
+
+        arg6: character collate
+
+
+
+
+
+        Others:
+
+        --help, help, -h show this text
