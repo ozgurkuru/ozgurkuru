@@ -1,4 +1,5 @@
 <?php
+
 class Converter{
 	
 	function Base64Decode($input){
