@@ -6,8 +6,7 @@ Definations
 $parameters = $_SERVER["argv"];
 
 
-
-if(count($_SERVER["argv"])>1 AND count($_SERVER["argv"])<7 ){
+if($_SERVER["argc"]>1 AND $_SERVER["argc"]<7 ){
 	echo "Please control your syntax... Some parameters are missing...\n";
 	$help = 1;
 }
@@ -92,4 +91,3 @@ if($help==1 or $_SERVER["argv"][1] == "help" or $_SERVER["argv"][1] == "--help" 
 	echo ">>> Operation Finished ...<<<\n";
 }
 ?>
-
