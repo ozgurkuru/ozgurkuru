@@ -21,10 +21,10 @@ require_once('convert_class.php');
 if(!empty($_POST['input'])){
 	$input = new Converter();
 	if($_POST['type']=="1"){
-		echo "<textarea name='result' rows=5 cols=30>".htmlspecialchars($input->Base64Decode($_POST['input']))."</textarea>";
+		echo "<textarea name='result' rows=5 cols=30>".strip_tags(htmlspecialchars($input->Base64Decode($_POST['input'])))."</textarea>";
 	}
 	if($_POST['type']=="2"){
-		echo "<textarea name='result' rows=5 cols=30>".htmlspecialchars($input->Base64Encode($_POST['input']))."</textarea>";
+		echo "<textarea name='result' rows=5 cols=30>".strip_tags(htmlspecialchars($input->Base64Encode($_POST['input'])))."</textarea>";
 	}
 }else{
 	echo "<textarea name='result' rows=5 cols=30></textarea>";
