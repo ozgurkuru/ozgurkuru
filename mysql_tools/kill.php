@@ -47,11 +47,10 @@ if($help==1 or $_SERVER["argv"][1] == "help" or $_SERVER["argv"][1] == "--help" 
 	$result = mysql_query("SHOW FULL PROCESSLIST");
 	while ($row=mysql_fetch_array($result)) {
 		$process_id=$row["Id"];
-		if (strpos($row['Host'],"$content")!==false ) {
-			echo "KILL query $process_id";
-			$sql="KILL $process_id";
-			mysql_query($sql);
-		}
+		if ($row["Time"] > 100 ) {
+                     $sql="KILL $process_id";
+                     mysql_query($sql);
+                }
 	}
 }
 ?>
