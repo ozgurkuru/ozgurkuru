@@ -85,7 +85,7 @@ set tm=500
 set nobackup
 set nowb
 set noswapfile
-
+set autowrite
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
